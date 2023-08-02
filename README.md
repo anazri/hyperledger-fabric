@@ -50,7 +50,11 @@ check go version
 go version
 ```
 ### Step 6: Start Hyperledger Fabric Test Network
+```
 cd fabric/
 cd test-network
 ./network.sh up createChannel -c mychannel -ca
 ./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-go/ -ccl go
+```
+*** I believed that I should change this folder "../asset-transfer-basic/chaincode-go/" with my own project folder.
+
